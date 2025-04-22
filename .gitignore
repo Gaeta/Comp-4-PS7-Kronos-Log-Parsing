@@ -28,7 +28,20 @@ RandWriter
 **/sequence/
 massif.*
 
-**/logs/
-**/reports/
 
-*.zip
+
+# Ignore all .log and .rpt files
+*.log
+*.rpt
+
+# Allow any device<number>_intouch.log.rpt files
+!device[0-9]_intouch.log.rpt
+!device[0-9][0-9]_intouch.log.rpt  # support two-digit device numbers too
+
+# Re-ignore device<number>_intouch.log (non .rpt)
+device[0-9]_intouch.log
+device[0-9][0-9]_intouch.log
+
+# Explicitly ignore *_BOOT.rpt files
+*_BOOT.rpt
+
