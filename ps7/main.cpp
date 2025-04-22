@@ -18,9 +18,9 @@
 #include <sstream>
 #include <boost/date_time/posix_time/posix_time.hpp>
 
-#define HEAD "=== Deviceboot===\n"
+#define HEAD "=== Device boot ===\n"
 #define BOOT_START " Boot Start\n"
-#define BOOT_FAIL "****Incompleteboot ****\n\n"
+#define BOOT_FAIL "**** Incomplete boot ****\n\n"
 #define BOOT_SUCCESS " Boot Completed\n"
 #define TIMER "\tBootTime:"
 
