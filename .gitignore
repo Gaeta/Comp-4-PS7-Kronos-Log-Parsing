@@ -1,0 +1,34 @@
+# Ignore object files and archives
+*.o
+*.a
+*.zip
+
+# Ignore specific folders
+*nbody/
+ps2-a/
+ps3a
+
+# Ignore specific files
+*settings.json
+*kenney_sokabanPack.zip
+*kenney_sokabanPack/
+Triangle
+Sokoban
+Sierpinsi
+NBody
+test
+EDistance
+TextWriter
+RandWriter
+
+# Ignore all sokoban folders and their contents
+**/sokoban/
+**/sokoban-Full/
+
+**/sequence/
+massif.*
+
+**/logs/
+**/reports/
+
+*.zip
