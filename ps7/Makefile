@@ -24,5 +24,7 @@ lint:
 
 # Clean compiled files
 clean:
-	rm -f *.o $(PROGRAM) test $(PROGRAM).a massif.out.*
+	rm -f *.o $(PROGRAM) test $(PROGRAM).a massif.out.* 
+	find . -type f -name "*.log.rpt" -exec rm {} +
+
 	

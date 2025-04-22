@@ -1,0 +1,68 @@
+=== Deviceboot===
+2(./device6_intouch.log): 2014-04-03 20:27:48 Boot Start
+161(./device6_intouch.log): 2014-04-03 20:31:01 Boot Completed
+	BootTime:193000ms 
+
+=== Deviceboot===
+82079(./device6_intouch.log): 2014-04-09 14:51:15 Boot Start
+82303(./device6_intouch.log): 2014-04-09 14:54:39 Boot Completed
+	BootTime:204000ms 
+
+=== Deviceboot===
+85398(./device6_intouch.log): 2014-04-10 18:13:13 Boot Start
+85564(./device6_intouch.log): 2014-04-10 18:16:37 Boot Completed
+	BootTime:204000ms 
+
+=== Deviceboot===
+85957(./device6_intouch.log): 2014-04-10 19:11:05 Boot Start
+86123(./device6_intouch.log): 2014-04-10 19:14:24 Boot Completed
+	BootTime:199000ms 
+
+=== Deviceboot===
+86127(./device6_intouch.log): 2014-04-10 19:18:36 Boot Start
+86293(./device6_intouch.log): 2014-04-10 19:21:56 Boot Completed
+	BootTime:200000ms 
+
+=== Deviceboot===
+86568(./device6_intouch.log): 2014-04-10 19:32:16 Boot Start
+86732(./device6_intouch.log): 2014-04-10 19:35:36 Boot Completed
+	BootTime:200000ms 
+
+=== Deviceboot===
+86750(./device6_intouch.log): 2014-04-10 20:06:27 Boot Start
+86821(./device6_intouch.log): 2014-04-10 20:09:07 Boot Completed
+	BootTime:160000ms 
+
+=== Deviceboot===
+86939(./device6_intouch.log): 2014-04-11 00:15:56 Boot Start
+87111(./device6_intouch.log): 2014-04-11 00:18:49 Boot Completed
+	BootTime:173000ms 
+
+=== Deviceboot===
+87116(./device6_intouch.log): 2014-04-11 13:28:25 Boot Start
+87286(./device6_intouch.log): 2014-04-11 13:31:12 Boot Completed
+	BootTime:167000ms 
+
+=== Deviceboot===
+87836(./device6_intouch.log): 2014-04-11 13:58:02 Boot Start
+88009(./device6_intouch.log): 2014-04-11 14:00:49 Boot Completed
+	BootTime:167000ms 
+
+=== Deviceboot===
+88983(./device6_intouch.log): 2014-04-11 14:23:42 Boot Start
+89155(./device6_intouch.log): 2014-04-11 14:26:31 Boot Completed
+	BootTime:169000ms 
+
+=== Deviceboot===
+90112(./device6_intouch.log): 2014-04-14 12:13:59 Boot Start
+****Incompleteboot ****
+
+=== Deviceboot===
+90135(./device6_intouch.log): 2014-04-14 12:16:13 Boot Start
+****Incompleteboot ****
+
+=== Deviceboot===
+90176(./device6_intouch.log): 2014-04-14 12:18:44 Boot Start
+90307(./device6_intouch.log): 2014-04-14 12:21:25 Boot Completed
+	BootTime:161000ms 
+
