@@ -1,3 +1,10 @@
+Device Boot Report
+
+InTouch log file: ./device3_intouch.log
+Lines Scanned: 41855
+
+Device boot count: initiated = 25, completed: 10
+
 === Device boot ===
 31063(./device3_intouch.log): 2014-01-26 09:55:07 Boot Start
 31176(./device3_intouch.log): 2014-01-26 09:58:04 Boot Completed

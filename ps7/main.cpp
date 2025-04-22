@@ -63,30 +63,46 @@ int main(int argc, char* argv[]) {
     size_t lineNumber = 1;
     bool bootStarted = false;
 
+    int bootStartedCount = 0;
+    int bootCompletedCount = 0;
+
+    std::ostringstream buffer;
+
     while (std::getline(inputFile, line)) {
         if (std::regex_match(line, start) && (bootStarted == true)) {
             timeStart = boost::posix_time::time_from_string(line.substr(0, 19));
-            outputFile << BOOT_FAIL << HEAD
-                << lineNumber << printedName << getStrTime(line) << BOOT_START;
+            buffer << BOOT_FAIL << HEAD
+                   << lineNumber << printedName << getStrTime(line) << BOOT_START;
+            bootStartedCount++;
 
         } else if (std::regex_match(line, start) && (bootStarted == false)) {
             bootStarted = true;
             timeStart = boost::posix_time::time_from_string(line.substr(0, 19));
 
-            outputFile << HEAD << lineNumber << printedName << getStrTime(line) << BOOT_START;
+            buffer << HEAD << lineNumber << printedName << getStrTime(line) << BOOT_START;
+            bootStartedCount++;
 
         } else if (std::regex_match(line, end) && (bootStarted == true)) {
             bootStarted = false;
             timeEnd = boost::posix_time::time_from_string(line.substr(0, 19));
             compTime = (timeEnd - timeStart).total_milliseconds();
-            outputFile << lineNumber << printedName << getStrTime(line) << BOOT_SUCCESS;
-            outputFile << TIMER << compTime << "ms " <<std::endl<< std::endl;
+            buffer << lineNumber << printedName << getStrTime(line) << BOOT_SUCCESS;
+            buffer << TIMER << compTime << "ms " << std::endl << std::endl;
+            bootCompletedCount++;
 
         } else if (std::regex_match(line, end) && (bootStarted == false)) {
             return 1;
         }
         lineNumber++;
     }
+
+    outputFile << "Device Boot Report" << std::endl << std::endl
+               << "InTouch log file: " << input << std::endl
+               << "Lines Scanned: " << lineNumber - 1 << std::endl << std::endl
+               << "Device boot count: initiated = " << bootStartedCount
+               << ", completed: " << bootCompletedCount << std::endl << std::endl;
+
+    outputFile << buffer.str();
 
     outputFile.close();
     inputFile.close();
